@@ -1,0 +1,45 @@
+.btn {
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5%;
+    font-size: 15px;
+    margin: 2px;
+    border: none;
+
+    &.disabled {
+        background-color: $disabled;
+        cursor: not-allowed;
+        pointer-events: none;
+
+        &::before {
+            font-family: "glyphter";
+            font-weight: 900;
+            content: "ICON "; // "\f007";
+
+        }
+    }
+}
+
+.btn-success {
+    background-color: $success;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $warning;
+    }
+
+    &.dates {
+        margin-left: 15px;
+    }
+}
+
+.btn-secondary {
+    background-color: $secondary;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $light;
+    }
+}

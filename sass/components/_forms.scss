@@ -1,0 +1,37 @@
+//==== DATES // 
+
+.component-input-wrapper-date {
+    position: relative;
+    width: 100%px;
+    display: inline-block;
+    margin: auto 0;
+    
+    input[type="date"] {
+        float: left;    
+        border-width: 1px;
+        border-style:solid;
+        border-color: $disabled;
+        &:first-child {
+            @include border-right-radius(0px);
+            @include border-left-radius(5px);
+            border-right: none;
+            padding: 5px 10px;
+
+            &:after {
+                content: "|";
+                padding-right: 5px;
+                font-weight: $icons-size;
+                margin: 0;
+                color: $disabled;
+            }
+        }
+
+        &:nth-child(2) {
+            @include border-left-radius(0px);
+            @include border-right-radius(5px);
+            border-left: none;
+            padding: 5px 10px;
+
+        }
+    }
+}
