@@ -9,53 +9,45 @@
 /* Components */
 @import "components/buttons";
 @import "components/forms";
-//@import "components/nav";
-
+@import "components/nav";
+//@import "components/sidebar";
 
 /* Sections 
 @import "section/registration_form";
 
 /* Pages / Views 
 @import "pages/registration"; */
-.component-nav {
-    text-align: center;
-    position: relative;
-    margin: 0;
-    padding: 0;
+
+.side-area {
+    width: 100%;
+    max-width: 200px;
+    background-color: #333333;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+
+    & .sidebar-icon {
+        position: absolute;
+        right: 10px;
+    }
+
+    & .side-nav [class*='fas'] {
+        margin: 0 15px 20px 0;
+        padding: 0;
+    }
+
+    & .side-nav ul {
+        list-style-type: none;
+    }
+
 }
 
-.component--nav ul {
-    padding: 0px;
-    margin: 0px;
-    list-style-type: none;
-
-    & li {
-
-        display: inline-block;
-        position: relative;
-        border-left: 1px solid hsla(200, 10%, 50%, 100);
-
-        & > ul {
-            display: none;
-
-            /* &:before { --arrow
-                content: '';
-                height: 0;
-                position: absolute;
-                left: 50px;
-                top: -12px;
-                width: 0;
-                border-left: 10px solid transparent;
-                border-right: 10px solid transparent;
-                border-top: 10px solid #ccc;
-            }*/
-
-        }
-
-        & a {
+a {
             height: 30px;
             display: inline-block;
-            padding: 10px 10px;
             text-decoration: none;
             color: $light;
             -webkit-transition: background-color 2s ease-out;
@@ -64,28 +56,12 @@
             transition: background-color 2s ease-out;
         }
 
-        &:hover ul {
-            display: block;
-            position: absolute;
-        }
-
-        & ul li {
-            display: block;
-            postion: absolute;
-
-            & > a {
-                display: block;
-                padding: 10px;
-            }
-
-            & > a:hover {
-                color: $success;
-            }
-        }
-    }
+.container {
+    margin-left: 200px;
 }
 
+.component--nav {
+    float: right;
+    right: 0;
 
-.component--nav-icon-with-text {
-    margin: 0 15px;
 }
