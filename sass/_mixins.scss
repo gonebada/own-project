@@ -27,3 +27,12 @@
     -ms-border-bottom-left-radius: $radius;
     border-bottom-left-radius: $radius;
 }
+
+@mixin status-dot($color,$height,$width) {
+    height: $height;
+    width: $width;
+    background-color: $color;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}

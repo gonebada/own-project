@@ -200,15 +200,19 @@ body { color: #ababab; }
 
 .component-input-wrapper-date input[type="date"]:nth-child(2) { -moz-border-top-left-radius: 0px; border-top-left-radius: 0px; -moz-border-bottom-left-radius: 0px; border-bottom-left-radius: 0px; -webkit-border--top-right-radius: 5px; -moz-border-top-right-radius: 5px; border-top-right-radius: 5px; -webkit-border--bottom-right-radius: 5px; -moz-border-bottom-right-radius: 5px; -ms-border-bottom-right-radius: 5px; border-top-bottom-radius: 5px; border-left: none; padding: 5px 10px; }
 
+.component--nav { float: right; right: 0; }
+
 .component-nav { text-align: center; position: relative; margin: 0; padding: 0; }
 
-.component--nav ul { padding: 0px; margin: 0px; list-style-type: none; }
+.component--nav ul { padding: 0px; margin: 0px; height: 40px; list-style-type: none; }
 
-.component--nav ul li { display: inline-block; position: relative; border-left: 1px solid #73848c; }
+.component--nav ul .dot-info { height: 8px; width: 8px; background-color: #FFA200; border-radius: 50%; display: inline-block; position: absolute; right: 25px; top: 6px; }
+
+.component--nav ul li { height: 100%; display: inline-block; position: relative; }
 
 .component--nav ul li > ul { display: none; /* &:before { --arrow content: ''; height: 0; position: absolute; left: 50px; top: -12px; width: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #ccc; }*/ }
 
-.component--nav ul li a { height: 30px; display: inline-block; padding: 10px 10px; text-decoration: none; color: #ababab; transition: background-color 2s ease-out; }
+.component--nav ul li a, .component--nav ul li i { height: 30px; display: inline-block; padding: 10px 10px; text-decoration: none; color: #ababab; transition: background-color 2s ease-out; }
 
 .component--nav ul li:hover ul { display: block; position: absolute; }
 
@@ -220,21 +224,43 @@ body { color: #ababab; }
 
 .component--nav-icon-with-text { margin: 0 15px; }
 
-/* Sections 
-@import "section/registration_form";
-
-/* Pages / Views 
-@import "pages/registration"; */
 .side-area { width: 100%; max-width: 200px; background-color: #333333; height: 100%; position: fixed; z-index: 1; top: 0; left: 0; overflow-x: hidden; }
 
 .side-area .sidebar-icon { position: absolute; right: 10px; }
 
 .side-area .side-nav [class*='fas'] { margin: 0 15px 20px 0; padding: 0; }
 
-.side-area .side-nav ul { list-style-type: none; }
+.side-area .side-nav ul { list-style-type: none; padding-left: 10px; }
+
+.side-area .side-nav ul li a { line-height: 60px; }
+
+.side-area .side-nav hr { margin: 40px 0 15px 0; color: #F5F5F2; opacity: 0.26; }
 
 a { height: 30px; display: inline-block; text-decoration: none; color: #ababab; transition: background-color 2s ease-out; }
 
-.container { margin-left: 200px; }
+.avatar .user-avatar { border-radius: 50%; vertical-align: middle; margin-right: 5px; }
 
-.component--nav { float: right; right: 0; }
+.avatar p { text-align: left; margin-left: 10px; }
+
+.avatar a { color: #56819F; }
+
+.dot-active { height: 12px; width: 12px; background-color: #04AE00; border-radius: 50%; display: inline-block; position: absolute; left: 38px; }
+
+.sidebar-show-hide-icon { position: absolute; right: 10px; font-size: 25px; }
+
+/* Sections 
+@import "section/registration_form";
+
+/* Pages / View
+@import "pages/registration"; */
+html { height: 100%; }
+
+.main-grid { height: 100%; overflow: hidden; margin: 0; display: -ms-flexbox; display: flex; box-sizing: border-box; }
+
+.main { height: 100%; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
+
+.sidebar { display: -ms-flexbox; display: flex; border: blue 1px solid; }
+
+#left { -ms-flex-negative: 0; flex-shrink: 0; }
+
+.navbar { -ms-flex-negative: 0; flex-shrink: 0; display: -ms-inline-flexbox; display: inline-flex; }

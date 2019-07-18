@@ -10,58 +10,40 @@
 @import "components/buttons";
 @import "components/forms";
 @import "components/nav";
-//@import "components/sidebar";
+@import "components/sidebar";
 
 /* Sections 
 @import "section/registration_form";
 
-/* Pages / Views 
+/* Pages / View
 @import "pages/registration"; */
 
-.side-area {
-    width: 100%;
-    max-width: 200px;
-    background-color: #333333;
+html {
     height: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-
-    & .sidebar-icon {
-        position: absolute;
-        right: 10px;
-    }
-
-    & .side-nav [class*='fas'] {
-        margin: 0 15px 20px 0;
-        padding: 0;
-    }
-
-    & .side-nav ul {
-        list-style-type: none;
-    }
-
 }
 
-a {
-            height: 30px;
-            display: inline-block;
-            text-decoration: none;
-            color: $light;
-            -webkit-transition: background-color 2s ease-out;
-            -moz-transition: background-color 2s ease-out;
-            -o-transition: background-color 2s ease-out;
-            transition: background-color 2s ease-out;
-        }
-
-.container {
-    margin-left: 200px;
+.main-grid {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    box-sizing: border-box;
 }
 
-.component--nav {
-    float: right;
-    right: 0;
+.main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+.sidebar {
+    display: flex;
+    border: blue 1px solid;
+}
+#left {
+    flex-shrink:0;
+}
+.navbar {
+    flex-shrink: 0;
+    display: inline-flex;
 }

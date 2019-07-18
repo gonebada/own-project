@@ -1,3 +1,9 @@
+.component--nav {
+    float: right;
+    right: 0;
+
+}
+
 .component-nav {
     text-align: center;
     position: relative;
@@ -8,13 +14,20 @@
 .component--nav ul {
     padding: 0px;
     margin: 0px;
+    height: 40px;
     list-style-type: none;
 
-    & li {
+    & .dot-info {
+        @include status-dot($warning, 8px, 8px);
+        right: 25px;
+        top: 6px;
+    }
 
+
+    & li {
+        height: 100%;
         display: inline-block;
         position: relative;
-        border-left: 1px solid hsla(200, 10%, 50%, 100);
 
         & > ul {
             display: none;
@@ -33,7 +46,8 @@
 
         }
 
-        & a {
+        & a,
+        & i {
             height: 30px;
             display: inline-block;
             padding: 10px 10px;
