@@ -117,61 +117,17 @@ template { display: none; }
 body { color: #ababab; }
 
 /* CLEARFIX METHOD */
-.clearfix:before, .clearfix:after { content: " "; display: table; }
+.item-nav { grid-area: header; }
 
-.clearfix:after { clear: both; }
+.item-main { grid-area: main; display: -ms-grid; display: grid; grid-tempate-rows: repeat(2, 1fr); background-color: #E3E3E3; }
 
-.line { height: 1px; border: 0; color: #E3E3E3; background-color: #E3E3E3; width: 100%; }
+.item-sidebar { grid-area: sidebar; border: #ff0000 solid 1px; }
 
-[class*="col-"] { float: left; min-height: 1px; height: auto; padding: 12px; margin: 1px; }
+.container.all-page { width: 100%; height: 100vh; display: -ms-grid; display: grid; -ms-grid-columns: 200px calc(100% - 200px); grid-template-columns: 200px calc(100% - 200px); -ms-grid-rows: 40px 1fr; grid-template-rows: 40px 1fr; grid-template-areas: "sidebar header" "sidebar main"; grid-auto-flow: row; }
 
-.col-1 { width: 8.33%; }
+[class*="item-card-"] { z-index: 1; margin: 0px 15px 15px 15px; background-color: white; }
 
-.col-2 { width: 16.66%; }
-
-.col-3 { width: 25%; }
-
-.col-4 { width: 33.33%; }
-
-.col-5 { width: 41.66%; }
-
-.col-6 { width: 50%; }
-
-.col-7 { width: 58.33%; }
-
-.col-8 { width: 66.66%; }
-
-.col-9 { width: 75%; }
-
-.col-10 { width: 83.33%; }
-
-.col-11 { width: 91.66%; }
-
-.col-12 { width: 100%; }
-
-.col-offset-1 { margin-left: 8.33%; }
-
-.col-offset-2 { margin-left: 16.66%; }
-
-.col-offset-3 { margin-left: 25%; }
-
-.col-offset-4 { margin-left: 33.33%; }
-
-.col-offset-5 { margin-left: 41.66%; }
-
-.col-offset-6 { margin-left: 50%; }
-
-.col-offset-7 { margin-left: 58.33%; }
-
-.col-offset-8 { margin-left: 66.66%; }
-
-.col-offset-9 { margin-left: 75%; }
-
-.col-offset-10 { margin-left: 83.33%; }
-
-.col-offset-11 { margin-left: 91.66%; }
-
-.col-offset-12 { margin-left: 100%; }
+.item-card-1 { margin-top: 15px; }
 
 /* Components */
 .btn { color: #fff; padding: 10px 15px; border-radius: 5%; font-size: 15px; margin: 2px; border: none; }
@@ -204,25 +160,25 @@ body { color: #ababab; }
 
 .component-nav { text-align: center; position: relative; margin: 0; padding: 0; }
 
-.component--nav ul { padding: 0px; margin: 0px; height: 40px; list-style-type: none; }
+.component--nav ul { padding: 0px; margin: 0px; height: 100%; list-style-type: none; }
 
-.component--nav ul .dot-info { height: 8px; width: 8px; background-color: #FFA200; border-radius: 50%; display: inline-block; position: absolute; right: 25px; top: 6px; }
+.component--nav ul .dot-info { height: 8px; width: 8px; background-color: #FFA200; border-radius: 50%; display: inline-block; position: absolute; right: 25px; top: 4px; }
 
 .component--nav ul li { height: 100%; display: inline-block; position: relative; }
 
 .component--nav ul li > ul { display: none; /* &:before { --arrow content: ''; height: 0; position: absolute; left: 50px; top: -12px; width: 0; border-left: 10px solid transparent; border-right: 10px solid transparent; border-top: 10px solid #ccc; }*/ }
 
-.component--nav ul li a, .component--nav ul li i { height: 30px; display: inline-block; padding: 10px 10px; text-decoration: none; color: #ababab; transition: background-color 2s ease-out; }
+.component--nav ul li a, .component--nav ul li i { height: 30px; display: inline-block; padding: 5px 5px; text-decoration: none; color: #ababab; transition: background-color 2s ease-out; }
 
 .component--nav ul li:hover ul { display: block; position: absolute; }
 
 .component--nav ul li ul li { display: block; postion: absolute; }
 
-.component--nav ul li ul li > a { display: block; padding: 10px; }
+.component--nav ul li ul li > a { display: block; padding: 5px; }
 
 .component--nav ul li ul li > a:hover { color: #F58220; }
 
-.component--nav-icon-with-text { margin: 0 15px; }
+.component--nav-icon-with-text { margin: 0 5px; }
 
 .side-area { width: 100%; max-width: 200px; background-color: #333333; height: 100%; position: fixed; z-index: 1; top: 0; left: 0; overflow-x: hidden; }
 
@@ -264,3 +220,5 @@ html { height: 100%; }
 #left { -ms-flex-negative: 0; flex-shrink: 0; }
 
 .navbar { -ms-flex-negative: 0; flex-shrink: 0; display: -ms-inline-flexbox; display: inline-flex; }
+
+.wrapper { display: -ms-grid; display: grid; -ms-grid-columns: [first] 25% [line2] 75%; grid-template-columns: [first] 25% [line2] 75%; -ms-grid-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; }

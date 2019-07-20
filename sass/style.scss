@@ -40,10 +40,20 @@ html {
     display: flex;
     border: blue 1px solid;
 }
+
 #left {
-    flex-shrink:0;
+    flex-shrink: 0;
 }
+
 .navbar {
     flex-shrink: 0;
     display: inline-flex;
 }
+
+.wrapper {
+    display: grid;
+    grid-template-columns: [first] 25% [line2] 75%;
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+
+
