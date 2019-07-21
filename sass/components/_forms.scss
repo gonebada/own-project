@@ -1,16 +1,18 @@
 //==== DATES // 
 
-.component-input-wrapper-date {
-    position: relative;
-    width: 100%px;
+.item-card-1.dates {
+    width: 100%;
     display: inline-block;
-    margin: auto 0;
-    
-    input[type="date"] {
-        float: left;    
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+
+    & input[type="date"] {
+        float: center;
         border-width: 1px;
-        border-style:solid;
+        border-style: solid;
         border-color: $disabled;
+
         &:first-child {
             @include border-right-radius(0px);
             @include border-left-radius(5px);

@@ -1,10 +1,10 @@
-.side-area {
+.item-sidebar {
     width: 100%;
     max-width: 200px;
     background-color: #333333;
     height: 100%;
-    position: fixed;
     z-index: 1;
+    position: relative;
     top: 0;
     left: 0;
     overflow-x: hidden;
@@ -21,21 +21,33 @@
 
     & .side-nav ul {
         list-style-type: none;
-        padding-left: 10px;
+        margin-bottom: 40px;
+        padding-left: 0;
 
-        & li a {
-            line-height: 60px;
+        & li {
+            line-height: 40px;
+
+
+
+            & a {
+                padding-left: 15px;
+            }
+
+            &:hover {
+                background-color: $font-black; //$hover-2;
+                border-left: 4px solid $warning;
+
+                & a {
+                    color: $hover;
+                }
+
+            }
+
 
         }
-
-    }
-
-    & .side-nav hr {
-        margin: 40px 0 15px 0;
-        color: $hover;
-        opacity: 0.26;
     }
 }
+
 
 a {
     height: 30px;
@@ -49,6 +61,8 @@ a {
 }
 
 .avatar {
+    margin: 10px;
+
     & .user-avatar {
         border-radius: 50%;
         vertical-align: middle;
@@ -66,7 +80,7 @@ a {
 }
 
 .dot-active {
-    @include status-dot($dot-active,12px,12px);
+    @include status-dot($dot-active, 12px, 12px);
     left: 38px;
 }
 
@@ -75,5 +89,4 @@ a {
     position: absolute;
     right: 10px;
     font-size: 25px;
-    ;
 }

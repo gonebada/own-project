@@ -1,33 +1,31 @@
-.component--nav {
-    float: right;
-    right: 0;
 
-}
-
-.component-nav {
-    text-align: center;
+.item-nav {
+    text-align: end;
     position: relative;
-    margin: 0;
+    margin-right: 10px;
     padding: 0;
 }
 
-.component--nav ul {
+.item-nav ul {
     padding: 0px;
     margin: 0px;
-    height: 100%;
     list-style-type: none;
 
-    & .dot-info {
+  & .dot-info {
         @include status-dot($warning, 8px, 8px);
-        right: 25px;
-        top: 4px;
+        right: 15px;
+        top: 5px;
     }
 
 
     & li {
-        height: 100%;
         display: inline-block;
         position: relative;
+        border-left: 2px $disabled solid;
+        height: 40px;
+        z-index: 1;
+        padding:10px 10px 0 10px; 
+
 
         & > ul {
             display: none;
@@ -48,9 +46,7 @@
 
         & a,
         & i {
-            height: 30px;
             display: inline-block;
-            padding: 5px 5px;
             text-decoration: none;
             color: $light;
             -webkit-transition: background-color 2s ease-out;
@@ -70,7 +66,6 @@
 
             & > a {
                 display: block;
-                padding: 5px;
             }
 
             & > a:hover {
@@ -80,7 +75,6 @@
     }
 }
 
-
-.component--nav-icon-with-text {
+.item-icon-text {
     margin: 0 5px;
 }
