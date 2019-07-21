@@ -6,22 +6,89 @@ body {
     color: $light;
 }
 
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: $disabled;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img.chart{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== Media queries ===== */
+
+@media(max-width: 767px) {
+    @include grid('sm');
+}
+
+@media(min-width: 768px) {
+    @include grid('md');
+}
+
+@media(min-width: 992px) {
+    @include grid('lg');
+}
+
+@media(min-width: 1200px) {
+    @include grid('xl');
+}
+
+
+
+/* MOJE STYLE  * {
+    box-sizing: border-box;
+}
+
+body {
+    color: $light;
+}
+
 #dashboard .container {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 200px calc(100% - 200px);
+    grid-template-columns: 200px repeat(3, 1fr);
     grid-template-rows: 40px 1fr;
     grid-template-areas:
-        "sidebar header"
-        "sidebar main";
+        "sidebar header header header"
+        "sidebar main main main";
     grid-auto-flow: row;
 
     & .item-main {
         grid-area: main;
         display: grid;
-        grid-tempate-rows: repeat(2, 1fr);
+        grid-tempate-rows: 50px 1fr 50px 1fr;
         background-color: $disabled;
+
+        & .item-header {
+            margin: 15px 15px 0 15px;
+            background-color: white;
+
+            & .card-1 {
+                grid-row: 1 /1;
+            }
+
+            & .card-2 {
+                grid-row: 3 /3;
+            }
+        }
 
         & [class*="item-card-"] {
             z-index: 1;
@@ -30,7 +97,26 @@ body {
         }
 
         & .item-card-1 {
-            margin-top: 15px;
+            display: grid;
+            grid-template-rows: 40px calc(100%-40px);
+        }
+
+        & .item-card-2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-content: center;
+        }
+
+        & .item-card-1-dates {
+            grid-area: 1 / 1 / 1 /1;
+            margin-left: 0;
+        }
+
+        & .item-card-1-chart {
+            grid-row-start: 4;
+            grid-row-end: 4;
+            margin-left: 0;
+            text-align: center;
         }
 
 
@@ -39,13 +125,14 @@ body {
 
 .item-nav {
     grid-area: header;
-    align-self:center;
+    align-self: center;
     justify-content: end;
 }
 
 .item-sidebar {
     grid-area: sidebar;
-vertical-align: middle;
+    vertical-align: middle;
+    position: fixed;
 }
 
 
@@ -55,7 +142,7 @@ vertical-align: middle;
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns:  1fr 5fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 40px 200px 50px auto;
     grid-template-areas:
         "sidebar header"
@@ -64,6 +151,7 @@ vertical-align: middle;
         "sidebar main-2"
         "sidebar main-2";
     grid-auto-flow: row;
+
     & .item-main {
         grid-area: main-2;
         display: grid;
@@ -84,3 +172,4 @@ vertical-align: middle;
 .item-3 {
     grid-area: 1 / 2/ 1 / 2;
 }
+*/

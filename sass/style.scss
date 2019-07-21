@@ -11,9 +11,10 @@
 @import "components/forms";
 @import "components/nav";
 @import "components/sidebar";
+@import "components/table";
 
 /* Sections 
-@import "section/registration_form";
+@import "section on/registration_form";
 
 /* Pags / View
 @import "pages/registration"; */
@@ -22,6 +23,8 @@ h3 {
     margin: 15px 15px 15px 15px;
     font-weight: lighter;
     font-family: $brand-font;
+    text-align: left;
+    text-transform: uppercase;
 }
 
 h2.brand-logo {
@@ -32,3 +35,20 @@ hr {
     color: $hover;
     opacity: 0.26;
 }
+
+.item-main {
+    margin-top: 15px;
+
+    & .item-header {
+        padding: 15px 15px 15px 15px;
+        background-color: white;
+    }
+
+    & [class*="item-card-"] {
+        background-color: white;
+        margin-bottom: 15px;
+
+    }
+
+}
+

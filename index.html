@@ -3,69 +3,156 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OwnProject</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <script src="https://kit.fontawesome.com/8aae2ce4b1.js"></script>
 </head>
 
-<body id="dashboard">
+<body>
     <div class="container">
-        <div class="item-nav">
-            <ul>
-                <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<i class="fas fa-arrow-down item-icon-text"></i>
+        <div class="row">
+            <div class="col-lg-2 col-sm-2 col-md-2 col-sm-2 col-xs-2">
+                <div class="item-sidebar">
+                    <!-- sidebar -->
+                    <a href="#" class="btn btn-dark button-sidebar">
+                        <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon"></i></h2>
                     </a>
+                    <div class="side-nav fixed">
+                        <ul>
+                            <li class="active"><a href="#"><i class="fas fa-bars item-icon-text"></i>General</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Detail</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Links</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Banners</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Personal Data</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Payout</a></li>
+                            <li><a href="#"><i class="fas fa-bars"></i>Postback</a></li>
+                        </ul>
+                        <hr>
+                        <!-- Usesr --->
+                        <div class="logo-wrapper avatar">
+                            <p>YOUR MANAGER</p>
+                            <img src='https://via.placeholder.com/45' alt='' class='user-avatar'> <span class="dot-active"></span>
+                            <a> Mikhael E.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-10 col-sm-10 col-md-10 col-sm-10 col-xs-10">
+                <div class="item-nav">
                     <ul>
-                        <li>
-                            <a href="#">Link 1</a>
+                        <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<i class="fas fa-arrow-down item-icon-text"></i>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">Link 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 3</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li>
-                            <a href="#">Link 2</a>
+                        <li><i class="far fa-bell item-icon-text"><span class="dot-info"></span></i>
                         </li>
-                        <li>
-                            <a href="#">Link 3</a>
+                        <li><a href="#"><i></i></a>Leonardo Dicaprio</li>
+                        <li><i class="fas fa-sign-out-alt item-icon-text"></i>
                         </li>
                     </ul>
-                </li>
-                <li><i class="far fa-bell item-icon-text"><span class="dot-info"></span></i>
-                </li>
-                <li><a href="#"><i></i></a>Leonardo Dicaprio</li>
-                <li><i class="fas fa-sign-out-alt item-icon-text"></i>
-                </li>
-            </ul>
-        </div>
-        <div class="item-main">
-            <div class="item-card-1">
-                <h3>General statistic</h3>
-                <hr>
-                <div class="item-card-1 dates">
-                    <input type="date" name="start-period" min="2019-01-01">
-                    <input type="date" name="end-period" min="2019-01-01">
-                    <button class="btn btn-success dates">I</button>
-                </div><hr>
-            </div>
-            <div class="item-card-2">fasfasfsafdsf</div>
-        </div>
-        <div class="item-sidebar">
-            <!-- sidebar -->
-            <a href="#" class="btn btn-dark button-sidebar">
-                <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon"></i></h2>
-            </a>
-            <div class="side-nav fixed">
-                <ul>
-                    <li class="active"><a href="#"><i class="fas fa-bars item-icon-text"></i>General</a></li>
-                    <li><a href="#"><i class="fas fa-bars"></i>Detail</a></li>
-                    <li><a href="#"><i class="fas fa-bars"></i>Links</a></li>
-                    <li><a href="#"><i class="fas fa-bars"></i>Banners</a></li>
-                    <li><a href="#"><i class="fas fa-bars"></i>Personal Data</a></li>
-                    <li><a href="#"><i class="fas fa-bars"></i>Payout</a></li>
-                    <li><a href="#"><i class="fas fa-bars"></i>Postback</a></li>
-                </ul>
-                <hr>
-                <!-- Usesr --->
-                <div class="logo-wrapper avatar">
-                    <p>YOUR MANAGER</p>
-                    <img src='https://via.placeholder.com/45' alt='' class='user-avatar'> <span class="dot-active"></span>
-                    <a> Mikhael E.</a>
+                </div>
+                <div class="container-fluid">
+                    <div class="item-main">
+                        <div class="item-header card-1">
+                            <h3>General statistic</h3>
+                            <hr>
+                        </div>
+                        <div class="item-card-1">
+                            <div class="item-card-1-dates">
+                                <input type="date" name="start-period" min="2019-01-01" value="2016-07-21">
+                                <input type="date" name="end-period" min="2019-01-01" value="2016-07-21">
+                                <button class="btn btn-success dates"><i class="fab fa-accessible-icon"></i></button>
+                                <hr>
+                            </div>
+                            <div class="item-card-1-chart">
+                                <img class="chart" src="images/chart.png">
+<!-- <img src="images/chart.png" alt="bar" srcset="/images/chart-medium.png 1024w,
+               /images/chart-large.png 2048w,
+               /images/chart.png 800w">-->
+                            </div>
+                        </div>
+                        <div class="item-header card-2">
+                            <h3>Links</h3>
+                            <hr>
+                        </div>
+                        <div class="scroll-wrapper item-card-2">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="strong">Home page</td>
+                                        <td>http://www.homepage.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Currently offer</td>
+                                        <td>Chttp://www.currently.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Blurpix</td>
+                                        <td>http://www.blurpix.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Your Site</td>
+                                        <td>http://www.yoursite.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Google</td>
+                                        <td>http://www.google.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Facebook</td>
+                                        <td>http://www.facebook.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Dashboard</td>
+                                        <td>http://www.dashboard.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Blurax</td>
+                                        <td>http://www.blurax.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Piece of Wine</td>
+                                        <td>http://www.pieceofwine.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="strong">Twitter</td>
+                                        <td>http://www.twiiter.com</td>
+                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

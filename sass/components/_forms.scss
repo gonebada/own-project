@@ -1,39 +1,40 @@
 //==== DATES // 
-
-.item-card-1.dates {
+.item-card-1-dates {
     width: 100%;
     display: inline-block;
     margin-top: auto;
     margin-bottom: auto;
     text-align: center;
+}
 
-    & input[type="date"] {
-        float: center;
-        border-width: 1px;
-        border-style: solid;
-        border-color: $disabled;
+input[type="date"] {
+    float: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: $disabled;
 
-        &:first-child {
-            @include border-right-radius(0px);
-            @include border-left-radius(5px);
-            border-right: none;
-            padding: 5px 10px;
+    &:first-child {
+        @include border-right-radius(0px);
+        @include border-left-radius(5px);
+        border-right: 1px inset ;
+        padding: 5px 10px;
+        margin: 0;
+        /*
+        &:after {
+            content: "|";
+            font-weight: 40px;
+            margin-right: -13px;
+            color: $disabled;
+        }*/
+    }
 
-            &:after {
-                content: "|";
-                padding-right: 5px;
-                font-weight: $icons-size;
-                margin: 0;
-                color: $disabled;
-            }
-        }
+    &:nth-child(2) {
+        @include border-left-radius(0px);
+        @include border-right-radius(5px);
+        border-left: none;
+        padding: 5px 10px;
+        margin-left:-3px;
 
-        &:nth-child(2) {
-            @include border-left-radius(0px);
-            @include border-right-radius(5px);
-            border-left: none;
-            padding: 5px 10px;
-
-        }
     }
 }
+
