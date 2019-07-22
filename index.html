@@ -6,18 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OwnProject</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/8aae2ce4b1.js"></script>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-sm-2 col-md-2 col-sm-2 col-xs-2">
+            <div class="col-xl-2 col-lg-2 col-sm-2 col-md-2 col-sm-2 col-xs-2">
                 <div class="item-sidebar">
                     <!-- sidebar -->
-                    <a href="#" class="btn btn-dark button-sidebar">
-                        <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon"></i></h2>
-                    </a>
+                    <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon hamburger"></i></h2>
                     <div class="side-nav fixed">
                         <ul>
                             <li class="active"><a href="#"><i class="fas fa-bars item-icon-text"></i>General</a></li>
@@ -38,12 +35,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-10 col-sm-10 col-md-10 col-sm-10 col-xs-10">
+            <div class="col-xl-10 col-lg-10 col-sm-10 col-md-10 col-sm-10 col-xs-10">
                 <div class="item-nav">
                     <ul>
-                        <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<i class="fas fa-arrow-down item-icon-text"></i>
+                        <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<span class="menu-arrow">&#9660;</span>
                             </a>
-                            <ul>
+                            <ul class="sub-menu">
                                 <li>
                                     <a href="#">Link 1</a>
                                 </li>
@@ -62,26 +59,30 @@
                         </li>
                     </ul>
                 </div>
-                <div class="container-fluid">
-                    <div class="item-main">
-                        <div class="item-header card-1">
-                            <h3>General statistic</h3>
-                            <hr>
-                        </div>
-                        <div class="item-card-1">
-                            <div class="item-card-1-dates">
-                                <input type="date" name="start-period" min="2019-01-01" value="2016-07-21">
-                                <input type="date" name="end-period" min="2019-01-01" value="2016-07-21">
-                                <button class="btn btn-success dates"><i class="fab fa-accessible-icon"></i></button>
+                <div class="container">
+                    <div class="container-fluid">
+                        <div class="item-main">
+                            <div class="item-header card-1">
+                                <h3>General statistic</h3>
                                 <hr>
                             </div>
-                            <div class="item-card-1-chart">
-                                <img class="chart" src="images/chart.png">
-<!-- <img src="images/chart.png" alt="bar" srcset="/images/chart-medium.png 1024w,
+                            <div class="item-card-1">
+                                <div class="item-card-1-dates">
+                                    <input type="date" name="start-period" min="2019-01-01" value="2016-07-21">
+                                    <input type="date" name="end-period" min="2019-01-01" value="2016-07-21">
+                                    <button class="btn btn-success dates"><i class="fab fa-accessible-icon"></i></button>
+                                    <hr>
+                                </div>
+                                <div class="item-card-1-chart">
+                                    <img class="chart" src="images/chart.png">
+                                    <!-- <img src="images/chart.png" alt="bar" srcset="/images/chart-medium.png 1024w,
                /images/chart-large.png 2048w,
                /images/chart.png 800w">-->
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="container-fluid">
                         <div class="item-header card-2">
                             <h3>Links</h3>
                             <hr>
@@ -157,6 +158,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://kit.fontawesome.com/8aae2ce4b1.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>

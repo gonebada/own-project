@@ -14,10 +14,16 @@
 @import "components/table";
 
 /* Sections 
-@import "section on/registration_form";
+@import "section_on/registration_form";
 
-/* Pags / View
+/* Pages / View
 @import "pages/registration"; */
+
+
+.item-sidebar h1,
+.item-sidebar i {
+    display: inline;
+}
 
 h3 {
     margin: 15px 15px 15px 15px;
@@ -31,24 +37,17 @@ h2.brand-logo {
     font-family: $brand-font;
 }
 
+
+.row {
+    background-color: white;
+}
+
 hr {
     color: $hover;
     opacity: 0.26;
 }
 
-.item-main {
-    margin-top: 15px;
+@media (max-width: 768px) {}
 
-    & .item-header {
-        padding: 15px 15px 15px 15px;
-        background-color: white;
-    }
 
-    & [class*="item-card-"] {
-        background-color: white;
-        margin-bottom: 15px;
-
-    }
-
-}
 

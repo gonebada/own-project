@@ -4,39 +4,68 @@
 
 body {
     color: $light;
+
 }
 
 .container {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    background-color: $disabled;  
 }
 
 .container-fluid {
     width: 100%;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: $disabled;
 }
 
 .row {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-img.chart{
+img.chart {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* ===== Media queries ===== */
+.container-fluid {
+    margin-top: 15px;
+
+    & .item-header {
+        padding: 15px 15px 15px 15px;
+        background-color: white;
+    }
+
+    & [class*="item-card-"] {
+        background-color: white;
+        margin-bottom: 15px;
+
+    }
+
+}
+
+/*==
+MEDIA
+===*/
+
+
+@media (max-width: 768px) {}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {}
+
+@media screen and (min-width:1200px) {}
 
 @media(max-width: 767px) {
     @include grid('sm');
 }
+
+
+
 
 @media(min-width: 768px) {
     @include grid('md');

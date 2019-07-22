@@ -1,8 +1,8 @@
 function toggleMenu(visible) {
-  document.querySelector('.menu').classList.toggle('show', visible)
+  document.querySelector('.side-nav').classList.toggle('show', visible)
 }
 
-document.querySelector('.hamburger').addEventListener('click', function(e) {
+document.querySelector('#nav-icon1').addEventListener('click', function(e) {
   e.preventDefault();
   toggleMenu()
 });
