@@ -11,7 +11,7 @@ body {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
-    background-color: $disabled;  
+    background-color: $disabled;
 }
 
 .container-fluid {
@@ -36,14 +36,13 @@ img.chart {
     margin-top: 15px;
 
     & .item-header {
-        padding: 15px 15px 15px 15px;
+        padding: 15px 15px 0px 15px;
         background-color: white;
     }
 
     & [class*="item-card-"] {
         background-color: white;
         margin-bottom: 15px;
-
     }
 
 }
@@ -52,13 +51,6 @@ img.chart {
 MEDIA
 ===*/
 
-
-@media (max-width: 768px) {}
-
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {}
-
-@media screen and (min-width:1200px) {}
 
 @media(max-width: 767px) {
     @include grid('sm');

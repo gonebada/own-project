@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-xl-2 col-lg-2 col-sm-2 col-md-2 col-sm-2 col-xs-2">
+            <div class="col-xl-2 col-lg-2 col-sm-2 col-md-2 col-sm-2 col-xs-2 sidebar">
                 <div class="item-sidebar">
                     <!-- sidebar -->
                     <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon hamburger"></i></h2>
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-10 col-lg-10 col-sm-10 col-md-10 col-sm-10 col-xs-10">
+            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">
                 <div class="item-nav">
                     <ul>
                         <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<span class="menu-arrow">&#9660;</span>
@@ -64,20 +64,19 @@
                         <div class="item-main">
                             <div class="item-header card-1">
                                 <h3>General statistic</h3>
-                                <hr>
                             </div>
                             <div class="item-card-1">
                                 <div class="item-card-1-dates">
                                     <input type="date" name="start-period" min="2019-01-01" value="2016-07-21">
                                     <input type="date" name="end-period" min="2019-01-01" value="2016-07-21">
-                                    <button class="btn btn-success dates"><i class="fab fa-accessible-icon"></i></button>
+                                    <button class="btn btn-success dates"><i class="fas fa-redo"></i></button>
                                     <hr>
                                 </div>
                                 <div class="item-card-1-chart">
-                                    <img class="chart" src="images/chart.png">
-                                    <!-- <img src="images/chart.png" alt="bar" srcset="/images/chart-medium.png 1024w,
-               /images/chart-large.png 2048w,
-               /images/chart.png 800w">-->
+                                    <!--<img class="chart" src="images/chart.png">-->
+                                    <img class="chart" src="images/chart.png" alt="bar" srcset="/images/chart-medium.png 1024w,
+               /images/chart-small.png 2048w,
+               /images/chart-small.png 800w">
                                 </div>
                             </div>
                         </div>
@@ -85,9 +84,9 @@
                     <div class="container-fluid">
                         <div class="item-header card-2">
                             <h3>Links</h3>
-                            <hr>
                         </div>
                         <div class="scroll-wrapper item-card-2">
+                            <button class="btn btn-success">+ add new</button>
                             <table>
                                 <tbody>
                                     <tr>
@@ -152,6 +151,7 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <button class="btn btn-success">+ add new</button>
                         </div>
                     </div>
                 </div>

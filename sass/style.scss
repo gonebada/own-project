@@ -19,14 +19,98 @@
 /* Pages / View
 @import "pages/registration"; */
 
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    h3 {
+        font-size: $h3-small-screen;
+    }
 
+    .scroll-wrapper {
+
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+            width: 100% !important;
+        }
+
+
+        td {
+            border: none;
+            border-bottom: 1px solid $disabled;
+            postiion: relative;
+            padding-left: 50%;
+        }
+
+        td:first-child {
+            margin: 0;
+            padding: 5px;
+        }
+
+        & td:nth-child(3),
+        & td:nth-child(4) {
+            display: none;
+        }
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    input[type="date"] {
+        float: center;
+        border-width: 1px;
+        border-style: solid;
+        font-size: small-screen;
+        border-color: $disabled;
+        margin-top: 5px;
+
+        &:first-child {
+            @include border-right-radius(0px);
+            @include border-left-radius(5px);
+            border-right: 1px inset;
+            padding: 2px 5px;
+            margin: 0;
+            /*
+        &:after {
+            content: "|";
+            font-weight: 40px;
+            margin-right: -13px;
+            color: $disabled;
+        }*/
+        }
+
+        &:nth-child(2) {
+            @include border-left-radius(0px);
+            @include border-right-radius(5px);
+            border-left: none;
+            padding: 2px 5px;
+            margin-left: -3px;
+
+        }
+    }
+}
+
+.btn {
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5%;
+    font-size: 15px;
+    border: none;
+}
 .item-sidebar h1,
 .item-sidebar i {
     display: inline;
 }
 
+.item-header {
+    border-bottom: 1px solid $disabled;
+}
+
 h3 {
-    margin: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
     font-weight: lighter;
     font-family: $brand-font;
     text-align: left;
@@ -46,8 +130,3 @@ hr {
     color: $hover;
     opacity: 0.26;
 }
-
-@media (max-width: 768px) {}
-
-
-
