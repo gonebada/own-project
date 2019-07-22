@@ -34,6 +34,7 @@ img.chart {
 
 .container-fluid {
     margin-top: 15px;
+    padding-top: 15px;
 
     & .item-header {
         padding: 15px 15px 0px 15px;
@@ -45,6 +46,31 @@ img.chart {
         margin-bottom: 15px;
     }
 
+}
+
+.item-header {
+    border-bottom: 1px solid $disabled;
+}
+
+h3 {
+    margin: 10px 10px 10px 10px;
+    font-weight: lighter;
+    font-family: $brand-font;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+h2.brand-logo {
+    font-family: $brand-font;
+}
+
+.row {
+    background-color: white;
+}
+
+hr {
+    color: $hover;
+    opacity: 0.26;
 }
 
 /*==

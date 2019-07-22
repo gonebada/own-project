@@ -12,12 +12,52 @@
 @import "components/nav";
 @import "components/sidebar";
 @import "components/table";
+@import "components/image";
 
 /* Sections 
 @import "section_on/registration_form";
 
 /* Pages / View
 @import "pages/registration"; */
+.container.form {
+    width: 600px;
+    color: #ffff;
+   display: flex;  
+  flex-direction: column;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    color: #ffff;
+    padding: 25px 25px 0;
+    margin: 20px 20px 0;
+    border-radius: 3px;
+
+
+}
+
+input {
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    -webkit-transition: background-color .3s;
+    transition: background-color .3s;
+}
+
+label {
+    width: 100px;
+    flex: none;
+    display: block;
+    width: 125px;
+}
+
+
+
+
 
 @media only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -91,42 +131,12 @@
 
         }
     }
-}
 
-.btn {
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5%;
-    font-size: 15px;
-    border: none;
-}
-.item-sidebar h1,
-.item-sidebar i {
-    display: inline;
-}
-
-.item-header {
-    border-bottom: 1px solid $disabled;
-}
-
-h3 {
-    margin: 10px 10px 10px 10px;
-    font-weight: lighter;
-    font-family: $brand-font;
-    text-align: left;
-    text-transform: uppercase;
-}
-
-h2.brand-logo {
-    font-family: $brand-font;
-}
-
-
-.row {
-    background-color: white;
-}
-
-hr {
-    color: $hover;
-    opacity: 0.26;
+    .btn {
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5%;
+        font-size: 15px;
+        border: none;
+    }
 }
