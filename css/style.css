@@ -308,14 +308,19 @@ img.chart { max-width: 100%; height: auto; }
 
 /* Pages / View
 @import "pages/registration"; */
-.container.form { width: 600px; color: #ffff; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; }
+.container.form { background-color: white; }
 
-.input { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; color: #ffff; padding: 25px 25px 0; margin: 20px 20px 0; border-radius: 3px; }
+.form-group { position: relative; padding: 20px 10px; width: 300px; max-width: 100%; }
 
-input { border: 0; color: inherit; font: inherit; margin: 0; outline: 0; padding: 0; transition: background-color .3s; }
+.form-group input { border: none; border-bottom: 1px solid #9e9e9e; color: #333; display: block; font-size: 16px; padding: 10px 0; width: 100%; }
 
-label { width: 100px; -ms-flex: none; flex: none; display: block; width: 125px; }
+.form-group label { color: #9e9e9e; font-size: 16px; font-weight: 100; position: absolute; top: 0; left: 10px; pointer-events: none; transform: translateY(30px); }
 
+.form-group input:valid, .form-group input:focus { border-bottom-color: #ee6e73; outline: none; }
+
+.form-group input:valid + label, .form-group input:focus + label { color: #ee6e73; font-size: 14px; transition: 1s; transform: translate(0, 70PX); }
+
+/* input { border: 0; color: inherit; font: inherit; margin: 0; outline: 0; padding: 0; -webkit-transition: background-color .3s; transition: background-color .3s; } label { width: 100px; flex: none; display: block; width: 125px; } */
 @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) { h3 { font-size: 15px; }
   .scroll-wrapper table, .scroll-wrapper thead, .scroll-wrapper tbody, .scroll-wrapper th, .scroll-wrapper td, .scroll-wrapper tr { width: 100% !important; }
   .scroll-wrapper td { border: none; border-bottom: 1px solid #E3E3E3; postiion: relative; padding-left: 50%; }
