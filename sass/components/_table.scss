@@ -38,13 +38,17 @@
         tr:hover {
             background-color: $disabled;
 
-            & td:nth-child(3) i {
+            & td:nth-child(3) i.first {
                 color: $warning;
+
+
             }
 
-            & td:nth-child(4) i {
+            & td:nth-child(3) i.second {
                 color: $light;
             }
+
+
         }
     }
 

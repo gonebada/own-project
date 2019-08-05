@@ -1,6 +1,6 @@
+    
 .item-sidebar {
     width: 100%;
-    max-width: 200px;
     background-color: #333333;
     height: 100%;
     z-index: 1;
@@ -8,8 +8,8 @@
     top: 0;
     left: 0;
     overflow-x: hidden;
-    margin-left:0;
-    padding-left:0;
+    margin-left: 0;
+    padding-left: 0;
 
     & .sidebar-icon {
         position: absolute;

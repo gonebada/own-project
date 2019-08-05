@@ -9,25 +9,40 @@
 </head>
 
 <!--https://kodilla.com/pl/kursy/formularze-css/1-8-119-603-->
-<body>
-    <div class="container form">
-        <div class="form-group">
-            <input type="text" required />
-            <label>Username</label>
+
+<body class="registration">
+        <section class="section-form">
+        <div class="container form">
+            <div class="title">
+                <h3>Sign up today</h3>
+            </div>
+            <div class="container form--input">
+                <div class="form-group">
+                    <input type="text" required />
+                    <label>Username</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" required />
+                    <label>Email</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" required />
+                    <label>Password</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" required />
+                    <label>Repeat Password</label>
+                    <button class="btn btn-success register" type="submit">Register</button>
+                </div>
+
+                <!--       <optgroup label="zawartość etykieyki">
+	        <option value="1">nr 1</option></optgroup>
+	     <optgroup label="zawartość etykieyki">
+	        <option value="2">nnr 2 </option></optgroup>
+	   --->
+            </div>
         </div>
-        <div class="form-group">
-            <input type="text" required />
-            <label>Email</label>
-        </div>
-        <div class="form-group">
-            <input type="text" required />
-            <label>Password</label>
-        </div>
-        <div class="form-group">
-            <input type="text" required />
-            <label>Repeat Password</label>
-        </div>
-    </div>
+    </section>
 </body>
 
 </html>

@@ -11,10 +11,10 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-xl-2 col-lg-2 col-sm-2 col-md-2 col-sm-2 col-xs-2 sidebar">
+            <div class="col-lg-2 col-sm-2 sidebar">
                 <div class="item-sidebar">
                     <!-- sidebar -->
-                    <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon hamburger"></i></h2>
+                    <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon hamburger" id="toggleBtn"></i></h2>
                     <div class="side-nav fixed">
                         <ul>
                             <li class="active"><a href="#"><i class="fas fa-bars item-icon-text"></i>General</a></li>
@@ -35,13 +35,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12 col-xs-12">
-                <div class="item-nav">
+            <div class="col-lg-10  col-md-12 col-sm-12">
+                <div class="item-nav" id="nav-1">
                     <ul>
-                        <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<span class="menu-arrow">&#9660;</span>
+                        <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<span class="menu-arrow" onclick="resize('div.item-nav','120px')">&#9660;</span>
                             </a>
                             <ul class="sub-menu">
-                                <li>
+                                <li>    
                                     <a href="#">Link 1</a>
                                 </li>
                                 <li>
@@ -92,62 +92,55 @@
                                     <tr>
                                         <td class="strong">Home page</td>
                                         <td>http://www.homepage.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="strong">Currently offer</td>
                                         <td>Chttp://www.currently.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="strong">Blurpix</td>
                                         <td>http://www.blurpix.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="strong">Your Site</td>
                                         <td>http://www.yoursite.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="strong">Google</td>
                                         <td>http://www.google.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="strong">Facebook</td>
                                         <td>http://www.facebook.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="strong">Dashboard</td>
                                         <td>http://www.dashboard.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="strong">Blurax</td>
                                         <td>http://www.blurax.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
                                     </tr>
                                     <tr>
                                         <td class="strong">Piece of Wine</td>
                                         <td>http://www.pieceofwine.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
+                                        <!-- 
+                                    <td class="on-hover"><i class="fas fa-trash"></i></td>
+                                    <td class="on-hover"><i class="fas fa-link"></i></td>-->
                                     </tr>
                                     <tr>
                                         <td class="strong">Twitter</td>
                                         <td>http://www.twiiter.com</td>
-                                        <td class="on-hover"><i class="fas fa-trash"></i></td>
-                                        <td class="on-hover"><i class="fas fa-link"></i></td>
+                                        <td class="on-hover"><i class="fas fa-trash first"></i><i class="fas fa-link second"></i></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -158,7 +151,6 @@
             </div>
         </div>
     </div>
-
     <script src="https://kit.fontawesome.com/8aae2ce4b1.js"></script>
     <script src="js/script.js"></script>
 

@@ -6,18 +6,13 @@ body {
     color: $light;
 
 }
-
-.container {
+.container{
     width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-    background-color: $disabled;
 }
-
 .container-fluid {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin: 0 auto;
+    background-color: $disabled;
 }
 
 .row {
@@ -81,8 +76,6 @@ MEDIA
 @media(max-width: 767px) {
     @include grid('sm');
 }
-
-
 
 
 @media(min-width: 768px) {
