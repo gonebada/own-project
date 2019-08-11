@@ -13,138 +13,15 @@
 @import "components/sidebar";
 @import "components/table";
 @import "components/image";
+//@import "components/modal";
+
 
 /* Sections 
 @import "section_on/registration_form";
 
 /* Pages / View
 @import "pages/registration"; */
-.registration {
-    background-color: $hover;
-}
 
-.section-form {
-    max-width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container.form {
-    background-color: white;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-around;
-    min-width: 250px;
-    max-width: 500px;
-    height: 450px;
-    padding-top: 30px;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px 5px rgba(245, 130, 32, 0.4);
-}
-
-.container.form--input {
-    padding: 30px;
-}
-
-.title {
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    justify-self: flex-start;
-    width: 100%;
-    margin: 0;
-    border-bottom: 1px solid $light;
-}
-
-.form-group {
-    position: relative;
-    padding: 20px 10px;
-    width: 300px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.form-group input {
-    border: none;
-    border: 1px solid $hover;
-    color: #333;
-    display: block;
-    font-size: 16px;
-    padding: 10px 10px;
-    width: 100%;
-}
-
-
-
-.form-group label {
-    color: rgba(245, 130, 32, 0.4);
-    font-size: 16px;
-    font-weight: 100;
-    position: absolute;
-    top: 0;
-    left: 30px;
-    pointer-events: none;
-    transform: translateY(30px);
-    //  transform: translateX(100px);    
-    // transform: translate(200px, 30px);
-
-}
-
-
-.form-group input:focus {
-    //  border-bottom-color: rgba(245, 130, 32, 0.9);
-    outline: none;
-    border-color: rgba(245, 130, 32, 0.9);
-
-}
-
-.form-group input:valid {
-    outline: none;
-    border-color: $dot-active;
-}
-
-.form-group input:valid + label,
-.form-group input:focus + label {
-    color: rgba(245, 130, 32, 0.9);
-    font-size: 14px;
-    transition: 1s;
-    //transform: translate(300px, 30PX);}
-    transform: translate(0, 70PX);
-}
-
-.active {
-    background-color: $success;
-    color: #fff;
-
-}
-
-btn.register {
-    margin: 0 auto;
-
-}
-
-/*
-in
-put {
-    border: 0;
-    color:inherit;
-    font: inherit;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-    -webkit-transition: background-color .3s;
-    transition: background-color .3s;
-}
-
-label {
-    width: 100px;
-    flex: none;
-    display: block;
-    width: 125px;
-}
-*/
 
 @media only screen and (max-width: 760px) {
     .scroll-wrapper {
@@ -230,3 +107,87 @@ label {
         border: none;
     }
 }
+
+
+
+
+
+.form--inline {
+    position: relative;
+    padding: 30px;
+    display: inline-block;
+
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    display: none;
+
+    &.show {
+        display: flex;
+    }
+
+    &::webkit-scrollbar {
+        display: none;
+    }
+}
+
+input {
+    outline: none;
+    box-shadow: none;
+
+}
+
+.modal {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    position: relative;
+    display: none;
+}
+
+h3 {
+    margin: 0;
+    padding: 15px 15px 15px 15px;
+}
+
+.modal.show {
+    display: block;
+}
+
+.modal .btn-close {
+    position: absolute;
+    top: 0;
+    right: -40px;
+    font-size: 20px;
+    color: $disabled;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+///* This is the style of our error messages */
+//.error {
+//    width: 100%;
+//    padding: 0;
+//
+//    font-size: 80%;
+//    color: white;
+//    background-color: #900;
+//    border-radius: 0 0 5px 5px;
+//
+//    -moz-box-sizing: border-box;
+//    box-sizing: border-box;
+//}
+//
+//.error.active {
+//    padding: 0.3em;
+//}
