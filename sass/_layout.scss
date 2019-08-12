@@ -47,8 +47,8 @@ img.chart {
     border-bottom: 1px solid $disabled;
 }
 
-h3 {
-    padding: 0 10px 10px 5px;
+h3,
+h4 {
     font-weight: lighter;
     font-family: $brand-font;
     text-align: left;
@@ -58,6 +58,15 @@ h3 {
 
 h2.brand-logo {
     font-family: $brand-font;
+}
+
+h3 {
+    padding: 0 10px 10px 20px;
+
+}
+
+h4 {
+    padding-left: 10px;
 }
 
 .row {

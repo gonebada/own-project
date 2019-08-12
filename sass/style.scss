@@ -119,6 +119,12 @@
 
 }
 
+//.form--inline {
+//    display: flex;
+//    flex-flow: row wrap;
+//    align-items: center;
+//}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -141,27 +147,37 @@
     }
 }
 
+.btn--inline {
+    display: inline-block;
+    float: center;
+}
+
 input {
     outline: none;
     box-shadow: none;
+    height: 35px;
 
 }
 
 .modal {
     max-width: 600px;
+    //    width:400px;
     margin: auto;
     background-color: #ffffff;
     position: relative;
     display: none;
 }
 
-h3 {
-    margin: 0;
-    padding: 15px 15px 15px 15px;
+h4 {
+    margin-bottom: 10px;
 }
 
 .modal.show {
     display: block;
+}
+
+.js--close-modal {
+    display: inline-block;
 }
 
 .modal .btn-close {
@@ -173,6 +189,17 @@ h3 {
     font-weight: bold;
     padding: 5px 10px;
 }
+
+input::placeholder {
+    padding-left: 40px;
+    color: $disabled;
+}
+
+.placeholder--icon {
+    position: inherit;
+    left: -150px;
+}
+
 
 ///* This is the style of our error messages */
 //.error {

@@ -63,7 +63,7 @@ function resize(select, size) {
 //    })
 
 //Modale
-var btn=document.getElementById('test');
+var btn=document.getElementById('modalLogIn');
 function closeModal() {
     document.getElementById('overlay').classList.remove('show')
 }

@@ -133,9 +133,13 @@ img.chart { display: block; margin-left: auto; margin-right: auto; }
 
 .item-header { border-bottom: 1px solid #E3E3E3; }
 
-h3 { padding: 0 10px 10px 5px; font-weight: lighter; font-family: "Open Sans", Helvetica, Arial; text-align: left; text-transform: uppercase; background-color: white; }
+h3, h4 { font-weight: lighter; font-family: "Open Sans", Helvetica, Arial; text-align: left; text-transform: uppercase; background-color: white; }
 
 h2.brand-logo { font-family: "Open Sans", Helvetica, Arial; }
+
+h3 { padding: 0 10px 10px 20px; }
+
+h4 { padding-left: 10px; }
 
 .row { background-color: white; }
 
@@ -198,7 +202,7 @@ MEDIA
 
 /* MOJE STYLE  * { box-sizing: border-box; } body { color: $light; } #dashboard .container { width: 100%; height: 100vh; display: grid; grid-template-columns: 200px repeat(3, 1fr); grid-template-rows: 40px 1fr; grid-template-areas: "sidebar header header header" "sidebar main main main"; grid-auto-flow: row; & .item-main { grid-area: main; display: grid; grid-tempate-rows: 50px 1fr 50px 1fr; background-color: $disabled; & .item-header { margin: 15px 15px 0 15px; background-color: white; & .card-1 { grid-row: 1 /1; } & .card-2 { grid-row: 3 /3; } } & [class*="item-card-"] { z-index: 1; margin: 0px 15px 15px 15px; background-color: white; } & .item-card-1 { display: grid; grid-template-rows: 40px calc(100%-40px); } & .item-card-2 { display: grid; grid-template-columns: repeat(3, 1fr); align-content: center; } & .item-card-1-dates { grid-area: 1 / 1 / 1 /1; margin-left: 0; } & .item-card-1-chart { grid-row-start: 4; grid-row-end: 4; margin-left: 0; text-align: center; } } } .item-nav { grid-area: header; align-self: center; justify-content: end; } .item-sidebar { grid-area: sidebar; vertical-align: middle; position: fixed; } //LAYOUT STYLEGUIDE // .container.styleguide { width: 100%; height: 100vh; display: grid; grid-template-columns: 1fr 5fr; grid-template-rows: 40px 200px 50px auto; grid-template-areas: "sidebar header" "sidebar main-2" "sidebar main-2" "sidebar main-2" "sidebar main-2"; grid-auto-flow: row; & .item-main { grid-area: main-2; display: grid; grid-tempate-columns: 50px 50px auto; grid-tempate-rows: 100px 100px auto; margin: 5px; } } .item-1 { grid-area: 3 / 1 / 3 / 3; } .item-2 { grid-area: 1 / 1 / 1 / 1; } .item-3 { grid-area: 1 / 2/ 1 / 2; } */
 /* Components */
-.btn { color: #fff; padding: 10px 15px; border-radius: 5%; font-size: 15px; margin: 2px; border: none; width: 100px; }
+.btn { color: #fff; padding: 10px 15px; border-radius: 5%; font-size: 15px; margin: 2px; border: none; width: 140px; }
 
 .btn.disabled { background-color: #E3E3E3; cursor: not-allowed; pointer-events: none; }
 
@@ -360,12 +364,22 @@ img.chart { max-width: 100%; height: auto; }
 
 .overlay::webkit-scrollbar { display: none; }
 
-input { outline: none; box-shadow: none; }
+.btn--inline { display: inline-block; float: center; }
+
+input { outline: none; box-shadow: none; height: 35px; }
 
 .modal { max-width: 600px; margin: auto; background-color: #ffffff; position: relative; display: none; }
 
-h3 { margin: 0; padding: 15px 15px 15px 15px; }
+h4 { margin-bottom: 10px; }
 
 .modal.show { display: block; }
 
+.js--close-modal { display: inline-block; }
+
 .modal .btn-close { position: absolute; top: 0; right: -40px; font-size: 20px; color: #E3E3E3; font-weight: bold; padding: 5px 10px; }
+
+input:-ms-input-placeholder { padding-left: 40px; color: #E3E3E3; }
+
+input::placeholder { padding-left: 40px; color: #E3E3E3; }
+
+.placeholder--icon { position: inherit; left: -150px; }

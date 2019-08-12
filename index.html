@@ -144,7 +144,8 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <button class="btn btn-success" id='test' onclick="openModal('#logInModal')" >+ add new</button>
+                            <button class="btn btn-success btn--inline">+ add new</button>
+                            <button class="btn btn-success btn--inline" id='modalLogIn' onclick="openModal('#logInModal')">Open Modal</button>
                         </div>
                     </div>
                 </div>
@@ -152,15 +153,15 @@
             <!---MODAL --->
             <div class="overlay" id='overlay'>
                 <div class="modal" id='logInModal'>
-<!--                    <div class="btn btn-close js--close-modal">x</div>-->
-                    <h3>LOGIN</h3>
+                    <!--                    <div class="btn btn-close js--close-modal">x</div>-->
+                    <h4>LOGIN</h4>
                     <hr>
                     <div class="form--inline">
-<!--                        <label for='login'>Password:</label>-->
-                        <input type='text' id='login' name='userloginName' minlength="3" placeholder='&#xf007; login' required>
-<!--                        <label for='password'>Password:</label>-->
-                        <input type='password' id='password' name='userPassword' minlength="7" placeholder='Password' autocomplete="current-password" required>
-<!--                      <div class="btn btn-success js--close-modal">Enter</div>-->
+                        <!--                        <label for='login'>Password:</label>-->
+                        <input type='text' id='login' name='userloginName' minlength="3" placeholder="login name" required><i class="far fa-user placeholder--icon"></i>
+                        <!--                        <label for='password'>Password:</label>-->
+                        <input type='password' id='password' name='userPassword' minlength="7" placeholder='password' autocomplete="current-password" required><i class="fas fa-key placeholder--icon"></i>
+                        <div class="btn btn-success js--close-modal">Enter</div>
                     </div>
                 </div>
             </div>
