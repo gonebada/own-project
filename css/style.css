@@ -401,8 +401,7 @@ img.chart { max-width: 100%; height: auto; }
 
 .overlay::webkit-scrollbar { display: none; }
 
-/* Pages / View
-@import "pages/registration"; */
+/* Pages / View */
 @media only screen and (max-width: 760px) { .scroll-wrapper table, .scroll-wrapper thead, .scroll-wrapper tbody, .scroll-wrapper th, .scroll-wrapper td, .scroll-wrapper tr { width: 100% !important; }
   .scroll-wrapper td { border: none; border-bottom: 1px solid #E3E3E3; postiion: relative; padding-left: 50%; }
   .scroll-wrapper td:first-child { margin: 0; padding: 5px; }
