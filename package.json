@@ -1,7 +1,7 @@
 {
   "name": "Projekt_2",
   "version": "1.0.0",
-  "description": "https://gonebada.github.io/own-project/",
+  "description": "https://gonebada.github.io/own-project/docs",
   "main": "index.js",
   "dependencies": {
     "autoprefixer": "^9.6.0",
