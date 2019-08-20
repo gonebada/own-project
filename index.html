@@ -6,24 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OwnProject</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css">
 </head>
 
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-sm-2 sidebar">
+            <div class="col-lg-2 col-sm-12 sidebar">
                 <div class="item-sidebar">
                     <!-- sidebar -->
-                    <h2 class="brand-logo">Just do it<i class="fas fa-bars sidebar-show-hide-icon hamburger" id="toggleBtn"></i></h2>
+                    <h2 class="brand-logo">Just do it<i class="fas fa-times sidebar-show-hide-icon hamburger" id="sidebarHide"></i></h2>
                     <div class="side-nav fixed">
                         <ul>
-                            <li class="active"><a href="#"><i class="fas fa-bars item-icon-text"></i>General</a></li>
-                            <li><a href="#"><i class="fas fa-bars"></i>Detail</a></li>
-                            <li><a href="#"><i class="fas fa-bars"></i>Links</a></li>
-                            <li><a href="#"><i class="fas fa-bars"></i>Banners</a></li>
-                            <li><a href="sass/pages/registration_form.html"><i class="fas fa-bars"></i>Personal Data</a></li>
-                            <li><a href="#"><i class="fas fa-bars"></i>Payout</a></li>
-                            <li><a href="#"><i class="fas fa-bars"></i>Postback</a></li>
+                            <li class="active"><a href="/../Projekt_2/index.html"><i class="far fa-star"></i><span class="ts">General</span></a></li>
+                            <li><a href="#"><i class="fas fa-indent"></i><span class="ts">Detail</span></a></li>
+                            <li><a href="#"><i class="fas fa-link"></i><span class="ts">Links</span></a></li>
+                            <li><a href="#"><i class="fas fa-indent"></i><span class="ts">Banners</span></a></li>
+                            <li><a href="sass/pages/registration_form.html"><i class="fas fa-user-alt"></i><span class="ts">Personal Data</span></a></li>
+                            <li><a href="#"><i class="fas fa-money-bill-alt"></i><span class="ts">Payout</span></a></li>
+                            <li><a href="#"><i class="fas fa-undo"></i><span class="ts">Postback</span></a></li>
                         </ul>
                         <hr>
                         <!-- Usesr --->
@@ -38,7 +39,10 @@
             <div class="col-lg-10  col-md-12 col-sm-12">
                 <div class="item-nav" id="nav-1">
                     <ul>
-                        <li><a href="#"><i class='fas fa-bars item-icon-text'></i>Item 1<span class="menu-arrow" onclick="resize('div.item-nav','120px')">&#9660;</span>
+                        <li id="showSidebar"><i class='fas fa-bars'></i></li>
+                        <li><a href="#"><i class='fas fa-bars item-icon-text hamburger'></i>Item 1<span class="menu-arrow">&#9660;</span>
+                                <span class="menu-arrow" id="mobile">&#9660;</span>
+                               <!-- //resizeNav-->
                             </a>
                             <ul class="sub-menu">
                                 <li>

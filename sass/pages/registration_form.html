@@ -5,96 +5,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OwnProject</title>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
 </head>
 
 <body class="registration">
-    <div class="container-fluid form">
-        <form>
-            <!--novalidate-->
-            <h3>Personal Data
-            </h3>
-            <div class="row">
-                <div class="col col-lg-3">
-                </div>
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div class="">
-                        <label for='name'>Name:</label>
-                        <input type="text" id="name" name="userName" reqiured placeholder="Leonardo" minlength="3">
-                    </div>
-                    <div class="">
-                        <label for='surname'>Surname:</label>
-                        <input type='text' id='surname' name='userSurname' placeholder="Dicaprio" minlength="3">
-                    </div>
-                    <div class="">
-                        <label for='email'>E-mail:</label>
-                        <input type='email' id='mail' name='userEmail' placeholder="leo@gmail.com" minlength="3">
-                    </div>
-                    <div class="">
-                        <label for='phone'>Phone number:</label>
-                        <input type='number' id='phone' name='userPhone' placeholder="+1 432 555 00 44" minlength="3">
-                    </div>
-                </div>
-                <div class="col col-lg-3"></div>
-            </div>
-            <div class="row">
-                <div class="col col-lg-3">
-                </div>
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div>
-                        <label for='skype'>Skype:</label>
-                        <input type="text" id="skype" name="userSkype">
-                    </div>
-                    <div>
-                        <label for='icq'>ICQ:</label>
-                        <input type='text' id='icq' name='userICQ'>
-                    </div>
-                    <div>
-                        <label for='msn'>Msn:</label>
-                        <input type='text' id='msn' name='userMsn'>
-                    </div>
-                </div>
-                <div class="col col-lg-3"></div>
-            </div>
-            <div class="row">
-                <div class="col col-lg-3">
-                </div>
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div>
-                        <label for='wallet'>Wallet:</label>
-                        <input type='text' id='wallet' name='userWallet'>
-                    </div>
-                </div>
-                <div class="col col-lg-3"></div>
-            </div>
-            <div class="row">
-                <div class="col col-lg-3">
-                </div>
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div>
-                        <label for='password'>Password:</label>
-                        <input type='password' id='password' name='userPassword' minlength="7" autocomplete="current-password" required>
-                    </div>
-                    <div>
-                        <label for='rptpassword'>Repeat:</label>
-                        <input type='password' id='rptpassword' name='userPasswordrpt' minlength="7" autocomplete="current-password" required>
-                    </div>
-                </div>
-                <div class="col col-lg-3"></div>
-            </div>
-            <div class="col col-lg-3">
-            </div>
-            <div class="row">
-                <div class="col col-lg-6 col-sm-12 justify-content-center">
-                    <div>
-                        <div class="button">
-                            <button type="submit" class="btn btn-success">Save</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-sm-12 sidebar">
+                <div class="item-sidebar">
+                    <!-- sidebar -->
+                    <h2 class="brand-logo">Just do it<i class="fas fa-times sidebar-show-hide-icon hamburger" id="sidebarHide"></i></h2>
+                    <div class="side-nav fixed">
+                        <ul>
+                            <li class="active"><a href="../../index.html"><i class="far fa-star"></i><span class="ts">General</span></a></li>
+                            <li><a href="#"><i class="fas fa-indent"></i><span class="ts">Detail</span></a></li>
+                            <li><a href="#"><i class="fas fa-link"></i><span class="ts">Links</span></a></li>
+                            <li><a href="#"><i class="fas fa-indent"></i><span class="ts">Banners</span></a></li>
+                            <li><a href="sass/pages/registration_form.html"><i class="fas fa-user-alt"></i><span class="ts">Personal Data</span></a></li>
+                            <li><a href="#"><i class="fas fa-money-bill-alt"></i><span class="ts">Payout</span></a></li>
+                            <li><a href="#"><i class="fas fa-undo"></i><span class="ts">Postback</span></a></li>
+                        </ul>
+                        <hr>
+                        <!-- Usesr --->
+                        <div class="logo-wrapper avatar">
+                            <p>YOUR MANAGER</p>
+                            <img src='https://via.placeholder.com/45' alt='' class='user-avatar'> <span class="dot-active"></span>
+                            <a> Mikhael E.</a>
                         </div>
                     </div>
-                    <div class="col col-lg-3"></div>
                 </div>
             </div>
-        </form>
+            <div class="col-lg-10  col-md-12 col-sm-12">
+                <div class="item-nav" id="nav-1">
+                    <ul>
+                        <li id="showSidebar"><i class='fas fa-bars'></i></li>
+                        <li><a href="#"><i class='fas fa-bars item-icon-text hamburger'></i>Item 1<span class="menu-arrow">&#9660;</span>
+                                <span class="menu-arrow" id="mobile">&#9660;</span>
+                                <!-- //resizeNav-->
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="sass/pages/registration_form.html">Personal Data</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">Link 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><i class="far fa-bell item-icon-text"><span class="dot-info"></span></i>
+                        </li>
+                        <li><a href="#"><i></i></a>Leonardo Dicaprio</li>
+                        <li><i class="fas fa-sign-out-alt item-icon-text"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container">
+                    <div class="container-fluid form">
+                        <form>
+                            <!--novalidate-->
+                            <h3>Personal Data
+                            </h3>
+                            <div class="row">
+                                <div class="col col-lg-3">
+                                </div>
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div class="">
+                                        <label for='name'>Name:</label>
+                                        <input type="text" id="name" name="userName" reqiured placeholder="Leonardo" minlength="3">
+                                    </div>
+                                    <div class="">
+                                        <label for='surname'>Surname:</label>
+                                        <input type='text' id='surname' name='userSurname' placeholder="Dicaprio" minlength="3">
+                                    </div>
+                                    <div class="">
+                                        <label for='email'>E-mail:</label>
+                                        <input type='email' id='mail' name='userEmail' placeholder="leo@gmail.com" minlength="3">
+                                    </div>
+                                    <div class="">
+                                        <label for='phone'>Phone number:</label>
+                                        <input type='number' id='phone' name='userPhone' placeholder="+1 432 555 00 44" minlength="3">
+                                    </div>
+                                </div>
+                                <div class="col col-lg-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-3">
+                                </div>
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div>
+                                        <label for='skype'>Skype:</label>
+                                        <input type="text" id="skype" name="userSkype">
+                                    </div>
+                                    <div>
+                                        <label for='icq'>ICQ:</label>
+                                        <input type='text' id='icq' name='userICQ'>
+                                    </div>
+                                    <div>
+                                        <label for='msn'>Msn:</label>
+                                        <input type='text' id='msn' name='userMsn'>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-3">
+                                </div>
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div>
+                                        <label for='wallet'>Wallet:</label>
+                                        <input type='text' id='wallet' name='userWallet'>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-3"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-3">
+                                </div>
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div>
+                                        <label for='password'>Password:</label>
+                                        <input type='password' id='password' name='userPassword' minlength="7" autocomplete="current-password" required>
+                                    </div>
+                                    <div>
+                                        <label for='rptpassword'>Repeat:</label>
+                                        <input type='password' id='rptpassword' name='userPasswordrpt' minlength="7" autocomplete="current-password" required>
+                                    </div>
+                                </div>
+                                <div class="col col-lg-3"></div>
+                            </div>
+                            <div class="col col-lg-3">
+                            </div>
+                            <div class="row">
+                                <div class="col col-lg-6 col-sm-12 justify-content-center">
+                                    <div>
+                                        <div class="button">
+                                            <button type="submit" class="btn btn-success">Save</button>
+                                        </div>
+                                    </div>
+                                    <div class="col col-lg-3"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://kit.fontawesome.com/8aae2ce4b1.js">
     </script>

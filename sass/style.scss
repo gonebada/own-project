@@ -4,8 +4,6 @@
 @import "normalize";
 @import "layout";
 
-
-
 /* Components */
 @import "components/buttons";
 @import "components/forms";
@@ -22,6 +20,11 @@
 /* Pages / View */
 //@import "pages/registration_form";
 
+@media only screen and (min-width: 765px) {
+    #showSidebar {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 760px) {
     .scroll-wrapper {
@@ -34,7 +37,6 @@
         tr {
             width: 100% !important;
         }
-
 
         td {
             border: none;
@@ -62,8 +64,68 @@
         font-size: $h3-small-screen;
     }
 
+    .menu-arrow {
+        display: none;
+    }
+
+    #mobile {
+        display: inline !important;
+    }
+
+    #nav-1.resizeNav {
+        padding-bottom: 180px !important;
+    }
+
+    .sub-menu {
+        display: none !important;
+
+        &.resizeNav {
+            display: block !important;
+        }
+    }
+
+//    .item-nav ul li ul li {
+//        background: inherit;
+//        border: none;
+//        box-shadow: none;
+//        color: $success;
+//        &:hover {
+//            box-shadow: none;
+//        }
+//        
+//        & > a:hover,a {
+//            color: $success;
+//        }
+//    }
+
     .sidebar {
         display: none;
+        transition: height 350ms ease-in-out;
+
+        &.show-sidebar {
+            width: 80%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 9999;
+            display: inline;
+
+            & #sidebarHide {
+                right: 50px;
+            }
+        }
+    }
+
+    .item-icon-text.hamburger {
+        display: none;
+    }
+
+    #showSidebar {
+        display: inline !important;
+        left: 2px;
+        position: absolute;
+        color:$disabled;
     }
 
     input[type="date"] {
@@ -107,32 +169,3 @@
         border: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-///* This is the style of our error messages */
-//.error {
-//    width: 100%;
-//    padding: 0;
-//
-//    font-size: 80%;
-//    color: white;
-//    background-color: #900;
-//    border-radius: 0 0 5px 5px;
-//
-//    -moz-box-sizing: border-box;
-//    box-sizing: border-box;
-//}
-//
-//.error.active {
-//    padding: 0.3em;
-//}

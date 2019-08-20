@@ -40,25 +40,21 @@ input[type="date"] {
 
 //=== Register CARD // 
 body.registration {
-  
-    .row {
+    & .justify-content-center > div {
+        margin-top: 1em;
+        align-items: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    & .container-fluid.form .row {
         padding: 20px 0;
         margin: 3px 0;
     }
 
-    .justify-content-center > div {
-        margin-top: 1em;
-        align-items: center;
-
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-        align-items: stretch;
-
-    }
-
-    h3 {
+    & h3 {
         margin: 0;
         padding: 15px 15px 15px 15px;
 
@@ -67,13 +63,13 @@ body.registration {
         }
     }
 
-    label {
+    & label {
         text-align: justify;
         float: right;
         width: 150px;
     }
 
-    input {
+    & input {
         width: 200px;
 
         &:focus {
